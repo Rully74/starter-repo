@@ -1,0 +1,14 @@
+.example-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+/* Una columna en móvil; tantas columnas como quepan (mín. 16rem) en pantallas mayores. */
+.example-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--space-4);
+  width: 100%;
+}
